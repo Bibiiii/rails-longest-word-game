@@ -1,0 +1,19 @@
+<h1 class="text-center">Score</h1>
+
+<div id="score-page">
+    <div class="container" id="wrapper">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Your word was: <span class="result"> <%= @word %> </span></h2>
+          <h2>Time taken to answer: <span class="result"> <%= @result[:time] %> </span></h2>
+          <h2>Translation: <span class="result"> <%= @result[:translation] %> </span></h2>
+          <h2>Your score: <span class="result"> <%= @result[:score].round(2) %> </span></h2>
+          <h2 class="result"> <%= @result[:message] %>!</h2>
+        </div>
+        <div id="result-btn" class="btn btn-bib btn-lg">
+          <%= link_to "Try again", "/pages/game" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

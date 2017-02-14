@@ -1,0 +1,40 @@
+<div class="text-center">
+
+<div class="gamegame">
+  <h1>My word game</h1>
+  <p>Create a word out of these letters</p>
+</div>
+
+<div class="wrapper">
+  <div id="game">
+    <%= image_tag "dictionary.png" %>
+    <div class="container">
+      <div class="row">
+        <table id="word-table">
+          <tr>
+            <% @grid.each do |letter| %>
+            <td> <%= letter %> </td>
+            <% end %>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <form action="/pages/score" method="get" id="word-form">
+          <div class="form-group">
+            <label>Enter a word:</label>
+            <input type="text" name="word" class="form-control" id="formGroupExampleInput">
+            <input type="hidden" name="grid" value="<%= @grid.join("") %>">
+            <input type="hidden" name="start_time" value="<%= @start_time %>">
+          </div>
+          <button type="submit" class="btn btn-bib btn-lg">Let's Go!</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

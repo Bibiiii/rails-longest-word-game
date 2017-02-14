@@ -1,0 +1,98 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com
+h1 {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 100px;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.gamegame {
+  p {
+    font-size: 2em;
+  }
+}
+
+#game {
+  text-align: center;
+  padding: 30px;
+  form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+  }
+  img {
+    width: 150px;
+    margin: 5px 0px 20px 0px;
+  }
+}
+
+.wrapper {
+  width: 100vw;
+  background-color: #9FB1BC;
+  padding: none;
+  margin: 0;
+}
+
+#word-table {
+  padding: 20px;
+  margin: auto;
+  border: 4px solid #6E8898;
+  td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    background-color: white;
+  }
+}
+
+#word-form {
+  label {
+      font-size: 1.5em;
+      color: white;
+    }
+  input {
+    font-size: 1.5em;
+    text-align: center;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 3px solid #D3D0CB;
+  }
+}
+
+.btn-bib {
+  color: white;
+  background-color: rgb(226, 192, 68);
+  a {
+    text-decoration: none;
+    color: white;
+    }
+  &:hover {
+    background-color: #E9D177;
+    color: white;
+  }
+}
+
+#score-page {
+  text-align: center;
+}
+
+.result {
+  color: #6E8898;
+}
+
+#result-btn {
+  margin-top: 20px;
+}
+
+#wrapper {
+  background-color: #E7E5E2;
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+}
